@@ -1,0 +1,2 @@
+image: # csadelaide/saasbook
+  file: .gitpod.Dockerfile
