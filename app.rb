@@ -80,8 +80,8 @@ end
   get '/win' do
      ### YOUR CODE HERE ###
      unless !@game.check_win_or_lose == :win
-      redirect '/show'
-      
+      #redirect '/show'
+      #redirect '/win'
     end
    
     erb :win # You may change/remove this line

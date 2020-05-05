@@ -52,8 +52,8 @@ class HangpersonGame
         guesses << letter
         for i in 0..word.length
           if word[i] == letter
-            word_with_guesses[i] = letter
-            @check_win_or_lose = :win if !word_with_guesses.include? '-'
+            @word_with_guesses[i] = letter
+            @check_win_or_lose = :win if !@word_with_guesses.include? '-'
           end
         end
         return true
@@ -69,5 +69,4 @@ class HangpersonGame
     end
     return false
   end
-
 end
